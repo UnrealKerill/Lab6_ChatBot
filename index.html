@@ -1,28 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initialscale=1.0">
- <link rel="stylesheet" href="./style.css">
- <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай инструмент</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="container">
- <div class="inner">
- <div class="item">
- <img src="1.png" alt="Oven" class="img">
- <button class="btn" id="btn1">Овен</button>
- </div>
- <div class="item">
- <img src="2.png" alt="Telec" class="img">
- <button class="btn" id="btn2">Телец</button>
- </div>
- </div>
- </div>
- <div class="usercard" id="usercard"></div>
- <script src="https://telegram.org/js/telegram-web-app.js"></script>
- <script src="app.js"></script>
+    <div id="game-container">
+        <div class="progress" id="progress">Раунд 1 из 5</div>
+        
+        <div class="round active" data-round="0">
+            <img src="https://goronok.ru/wp-content/uploads/2017/05/Nova_44_front.jpg" alt="Инструмент 1" class="instrument-image">
+            <div class="options-grid">
+                <button class="option-btn">Скрипка</button>
+                <button class="option-btn">Гитара</button>
+                <button class="option-btn">Фортепиано</button>
+                <button class="option-btn">Барабан</button>
+            </div>
+        </div>
+
+        <div class="round" data-round="1">
+            <img src="https://img.muzline.ua/image/catalog/articles/duhovie-instrumenti/truby/interesnie-facty-truba-duhovoy-instrument-1.jpg" alt="Инструмент 2" class="instrument-image">
+            <div class="options-grid">
+                <button class="option-btn">Труба</button>
+                <button class="option-btn">Саксофон</button>
+                <button class="option-btn">Флейта</button>
+                <button class="option-btn">Тромбон</button>
+            </div>
+        </div>
+
+        <div class="round" data-round="2">
+            <img src="https://www.belcanto.ru/media/images/term/19071502.jpg" alt="Инструмент 3" class="instrument-image">
+            <div class="options-grid">
+                <button class="option-btn">Орган</button>
+                <button class="option-btn">Аккордеон</button>
+                <button class="option-btn">Фортепиано</button>
+                <button class="option-btn">Арфа</button>
+            </div>
+        </div>
+
+        <div class="round" data-round="3">
+            <img src="https://png.klev.club/uploads/posts/2024-03/png-klev-club-p-baraban-png-2.png" alt="Инструмент 4" class="instrument-image">
+            <div class="options-grid">
+                <button class="option-btn">Бонги</button>
+                <button class="option-btn">Литавры</button>
+                <button class="option-btn">Тарелки</button>
+                <button class="option-btn">Барабаны</button>
+            </div>
+        </div>
+
+        <div class="round" data-round="4">
+            <img src="https://gitaraclub.ru/upload/iblock/145/3xr3rtl2ttosq0onqhozaqnf1qqslq4w.jpg" alt="Инструмент 5" class="instrument-image">
+            <div class="options-grid">
+                <button class="option-btn">Балалайка</button>
+                <button class="option-btn">Гитара</button>
+                <button class="option-btn">Лютня</button>
+                <button class="option-btn">Укулеле</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
-
 </html>
-
