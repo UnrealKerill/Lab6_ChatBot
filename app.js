@@ -81,3 +81,5 @@ function initializeGame() {
 
 // Запускаем игру после загрузки DOM
 document.addEventListener('DOMContentLoaded', initializeGame);
+
+Telegram.WebApp.ready();
